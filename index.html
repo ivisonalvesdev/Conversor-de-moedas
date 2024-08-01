@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="./scripts.js"></script>
     <title>Convert Money</title>
 </head>
 
@@ -28,9 +27,9 @@
         <label>
             Converter <b>para</b>
 
-            <select>
-                <option>U$ Dólar Americano </option>
-                <option>€ Euro </option>
+            <select class="currency-select">
+                <option value="dolar">U$ Dólar Americano </option>
+                <option value="euro">€ Euro </option>
             </select>
 
         </label>
@@ -38,7 +37,7 @@
         <label>
             <b>Valor</b>
 
-                <input placeholder="R$ 10.000,00">
+                <input class="input-currency" placeholder="R$ 10.000,00">
         </label>
 
         <button class="convert-button">Converter</button>
@@ -48,17 +47,17 @@
 
                 <img src="./assets/brasil 2.png" alt="imagem da bandeira do brasil">
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0.0</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
 
              </div>
 
-                <img class="arrow-img" src="./assets/Vector.png" alt="">
+                <img class="arrow-img" src="./assets/Vector.png" alt="imgagm ">
 
                 <div class="currency-box">
 
                     <img src="./assets/estados-unidos (1) 1.png" alt="imagem da bandeira do USA">
                     <p class="currency">Dólar</p>
-                    <p class="currency-value">U$ 0.0</p>
+                    <p class="currency-value">U$ 0,00</p>
 
                 </div>
                 
@@ -68,5 +67,7 @@
 
 
 </body>
+
+<script src="./scripts.js"></script>
 
 </html>
