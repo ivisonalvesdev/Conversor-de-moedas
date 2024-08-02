@@ -43,12 +43,15 @@ function changeCurrency() {
 
     if (currencySelect.value == "dolar") {
         currencyName.innerHTML = "Dólar Americano"
-        currencyImage.src = "./assets/dolar.png"
+        currencyImage.src = "./assets/dolar.png"   
     }
 
-    if (currencySelect.value == "euro")
+    if (currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
-        currencyImage.src = "./assets/euro.png"
+        currencyImage.src = "./assets/euro.png"    
+    }
+    
+    convertValues()
 }
 
 currencySelect.addEventListener("change", changeCurrency)
