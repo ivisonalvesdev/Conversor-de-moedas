@@ -11,6 +11,7 @@ function convertValues() {
 
     const dolarToday = 5.66
     const euroToday = 6.12
+    const realtoday = 1.00
 
     if (currencySelect.value == "dolar") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
