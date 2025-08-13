@@ -8,14 +8,21 @@
 
 body{
     background-color: #8A51FC;
+     padding-top: 40px;
+
 }
 
-.logo{
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: 20px auto;
+.img-background {
+    position: fixed; /* fixa na tela toda */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cobre a tela */
+    z-index: -1; /* atrás do conteúdo */
+    filter: brightness(60%); /* sombra escura */
 }
+
 
 
 main{
@@ -104,3 +111,9 @@ section{
     font-weight: 700;
     font-size: 20px;
 }
+
+.input-currency::placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+
