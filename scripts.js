@@ -12,7 +12,7 @@ const convertValues = async () => {
     const dolarToday = data.USDBRL.high
     const euroToday = data.EURBRL.high
     const bitcoinToday = data.BTCBRL.high
-    const realToday = 1 
+    const realToday = 1
 
 
     if (currencySelectUp.value == "dolar-1") {
